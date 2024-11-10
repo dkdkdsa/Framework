@@ -1,0 +1,16 @@
+{
+    "name": "Framework.Counter",
+    "rootNamespace": "Framework.Counter",
+    "references": [
+        "GUID:6f9e53b4f29ba1b48a3f6886956395a5"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
