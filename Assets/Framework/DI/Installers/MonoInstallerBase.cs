@@ -82,7 +82,7 @@ namespace Framework.DI
             while (type != typeof(MonoBehaviour) && type != typeof(Component))
             {
 
-                var propertys = compo.GetType()
+                var propertys = type
                     .GetProperties(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance)
                     .Where(x => x.GetCustomAttribute<Inject>() != null);
 
@@ -110,7 +110,7 @@ namespace Framework.DI
 
             while(type != typeof(MonoBehaviour) && type != typeof(Component))
             {
-                var methods = compo.GetType()
+                var methods = type
                     .GetMethods(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance)
                     .Where(x => x.GetCustomAttribute<Inject>() != null);
 
